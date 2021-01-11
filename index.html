@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    
-	<meta name="author" content="maghozistudio" />
+	<meta name="author" content="Mochammad Tedy Fazrin" />
    <title>Rise of Developers</title>
    
    <!-- Meta tag for thumbnails -->
@@ -21,7 +21,7 @@
 
 	<!-- jQuery load first -->
 	<script src="assets/frontend/js/jquery.min.js"></script>
-
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<!-- CSS Files -->
 	<style>
 		@import url("assets/frontend/css/bootstrap.min.css");
@@ -109,8 +109,9 @@
             </div>
             <div class="col-lg-6 col-md-12 align-self-center">
                <div class="header-poster">
-                  <img data-aos="fade-left" data-aos-delay="1500"
-                     src="assets/images/header-illustrator.svg" alt="images">
+                  <lottie-player data-aos="fade-left" data-aos-delay="1500" src="https://assets6.lottiefiles.com/packages/lf20_rycdh53q.json" background="transparent"  speed="1"  loop autoplay></lottie-player>
+                  <!-- <img data-aos="fade-left" data-aos-delay="1500"
+                     src="assets/images/header-illustrator.svg" alt="images"> -->
                </div>
             </div>
          </div>
@@ -134,7 +135,7 @@
                <img src="assets/images/close.png" alt="images">
             </a>
          </div>
-         <form action="send_data" method="post" accept-charset="utf-8">
+         <form action="http://localhost:8000/api/data" method="post" accept-charset="utf-8">
          <div class="modal-body">
             <div class="row">
                <div class="col-sm-6">
@@ -156,11 +157,11 @@
                      <label>The scope of project*</label>
                      <select class="form-control form-input-text" name="scope" required>
                         <option hidden selected disabled>e.g Design</option>
-                        <option value="1">Mobile Apps</option>
-                        <option value="2">Website</option>
-                        <option value="3">Illustration</option>
-                        <option value="4">Branding</option>
-                        <option value="5">Development</option>
+                        <option value="Mobile Apps">Mobile Apps</option>
+                        <option value="Website">Website</option>
+                        <option value="Illustration">Illustration</option>
+                        <option value="Branding">Branding</option>
+                        <option value="Development">Development</option>
                      </select>
                   </div>
                </div>
@@ -176,9 +177,9 @@
                      <label>The Budget*</label>
                      <select class="form-control form-input-text" name="budget" required>
                         <option hidden selected disabled>e.g > $1000</option>
-                        <option value="1">&lt;$1000</option>
-                        <option value="2">$1000-$5000</option>
-                        <option value="3">&gt;$5000</option>
+                        <option value="&lt;$1000">&lt;$1000</option>
+                        <option value="$1000-$5000">$1000-$5000</option>
+                        <option value="&gt;$5000">&gt;$5000</option>
                      </select>
                   </div>
                </div>
@@ -214,7 +215,8 @@
       <div class="row d-flex col-reverse">
          <div class="col-lg-6 col-md-12 align-self-center">
             <div class="about-poster" data-aos="fade-right" data-aos-delay="500">
-               <img src="assets/images/about-illustrator.svg" alt="images">
+               <lottie-player data-aos="fade-left" data-aos-delay="1500" src="https://assets7.lottiefiles.com/packages/lf20_natclrl9.json" background="transparent"  speed="1"  loop autoplay></lottie-player>
+               <!-- <img src="assets/images/about-illustrator.svg" alt="images"> -->
             </div>
          </div>
          <div class="col-lg-6 col-md-12 align-self-center">
